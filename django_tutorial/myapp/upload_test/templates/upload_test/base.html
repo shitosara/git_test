@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="viewport" content="content">
+        <title>ファイルアップロード</title>
+        <!--<link rel="stylesheet" href="{% static 'css/bootstrap.css' %}" type="text/css">-->
+        <link rel="stylesheet" href="{% static 'css/base.css' %}" type="text/css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="header">
+                <h1>コンポザ！</h1>
+            </div>
+            <div class="content">
+                {% block content %}
+                    {{ content }}
+                {% endblock %}
+            </div>
+            <div class="footer">
+                <label>written by Shitosara.inc</label>
+            </div>
+        </div>
+    </body>
+</html>
